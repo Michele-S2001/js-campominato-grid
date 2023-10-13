@@ -1,0 +1,32 @@
+/* RESET RULES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* UTILITIES */
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+} 
+
+.field {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+/* debug */
+
+.debug .container {
+  border: 3px solid red;
+}
