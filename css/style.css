@@ -64,9 +64,10 @@ button {
   font-size: 32px;
   font-weight: 700;
   color: var(--white);
+  cursor: default;
 }
 
-.btn {
+#btn {
   background-color: var(--light-grey);
   font-size: 20px;
   padding: 0 10px;
@@ -86,6 +87,7 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 24px;
+  cursor: crosshair;
 }
 
 
