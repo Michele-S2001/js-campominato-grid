@@ -3,7 +3,7 @@
 // recupero gli elementi dal DOM
 const fieldDOMElement = document.querySelector('.field');
 const btnDOMElement = document.getElementById('btn');
-const valueSelectedDOMElement = document.querySelector('#difficulty');
+const selectDOMElement = document.querySelector('#difficulty');
 
 // ascolto l'evento click sul bottone per triggerare l'invocazione di una funzione
 btnDOMElement.addEventListener('click', gameStart);
@@ -13,7 +13,7 @@ function gameStart () {
   fieldDOMElement.innerHTML = '';
  
   //recupero la value dalla select
-  const difSelected = valueSelectedDOMElement.value;
+  const difSelected = selectDOMElement.value;
 
   if (difSelected === "1"){    
     fieldDOMElement.style.gridTemplateColumns = "repeat(7, 1fr)";
