@@ -10,20 +10,20 @@ btnDOMElement.addEventListener('click', gameStart);
 
 function gameStart () {
   // un reset precauzionale
-  fieldDOMElement.innerHTML = '';
+  fieldDOMElement.innerHTML = '';            
  
   //recupero la value dalla select
   const difSelected = selectDOMElement.value;
 
   if (difSelected === "1"){    
-    fieldDOMElement.style.gridTemplateColumns = "repeat(7, 1fr)";
-    cellGenerator(49);
+    fieldDOMElement.style.gridTemplateColumns = "repeat(10, 1fr)";
+    cellGenerator(100);
   } else if (difSelected === "2") {
     fieldDOMElement.style.gridTemplateColumns = "repeat(9, 1fr)";
     cellGenerator(81);
   } else {
-    fieldDOMElement.style.gridTemplateColumns = "repeat(10, 1fr)";
-    cellGenerator(100);
+    fieldDOMElement.style.gridTemplateColumns = "repeat(7, 1fr)";
+    cellGenerator(49);
   }
 }
 
