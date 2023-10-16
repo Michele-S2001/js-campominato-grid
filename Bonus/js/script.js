@@ -9,20 +9,23 @@ const selectDOMElement = document.querySelector('#difficulty');
 btnDOMElement.addEventListener('click', gameStart);
 
 function gameStart () {
+  fieldSetUp(fieldDOMElement, selectDOMElement);
+}
+
+function fieldSetUp (field, select) {
   // un reset precauzionale
-  fieldDOMElement.innerHTML = '';            
- 
+  field.innerHTML = '';            
   //recupero la value dalla select
-  const difSelected = selectDOMElement.value;
+  const difSelected = select.value;
 
   if (difSelected === "1"){    
-    fieldDOMElement.style.gridTemplateColumns = "repeat(10, 1fr)";
+    field.style.gridTemplateColumns = "repeat(10, 1fr)";
     cellGenerator(100);
   } else if (difSelected === "2") {
-    fieldDOMElement.style.gridTemplateColumns = "repeat(9, 1fr)";
+    field.style.gridTemplateColumns = "repeat(9, 1fr)";
     cellGenerator(81);
   } else {
-    fieldDOMElement.style.gridTemplateColumns = "repeat(7, 1fr)";
+    field.style.gridTemplateColumns = "repeat(7, 1fr)";
     cellGenerator(49);
   }
 }
